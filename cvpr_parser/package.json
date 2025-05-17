@@ -1,0 +1,25 @@
+{
+  "name": "cvpr_parser",
+  "version": "1.0.0",
+  "main": "parse_cvpr.js",
+  "scripts": {
+    "start": "node parse_cvpr.js",
+    "parse": "node parse_cvpr.js",
+    "parse:sample": "node parse_cvpr.js cvpr_sample.html",
+    "parse:url": "node parse_cvpr.js https://cvpr.thecvf.com/Conferences/2025/AcceptedPapers"
+  },
+  "keywords": [
+    "cvpr",
+    "parser",
+    "conference",
+    "papers"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A parser for CVPR conference papers",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "jsdom": "^26.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}
