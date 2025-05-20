@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cvpr-paper-map/static/css/main.59b7ef42.css",
+    "main.js": "/cvpr-paper-map/static/js/main.1f3517cd.js",
+    "static/js/453.c5875021.chunk.js": "/cvpr-paper-map/static/js/453.c5875021.chunk.js",
+    "index.html": "/cvpr-paper-map/index.html",
+    "main.59b7ef42.css.map": "/cvpr-paper-map/static/css/main.59b7ef42.css.map",
+    "main.1f3517cd.js.map": "/cvpr-paper-map/static/js/main.1f3517cd.js.map",
+    "453.c5875021.chunk.js.map": "/cvpr-paper-map/static/js/453.c5875021.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59b7ef42.css",
+    "static/js/main.1f3517cd.js"
+  ]
+}
