@@ -19,7 +19,10 @@ RUN apt update && apt install -y less \
   iproute2 \
   dnsutils \
   aggregate \
-  jq
+  jq \
+  python3 \
+  python3-pip \
+  python3-venv
 
 # Ensure default node user has access to /usr/local/share
 RUN mkdir -p /usr/local/share/npm-global && \
@@ -73,6 +76,6 @@ RUN npm install -g @anthropic-ai/claude-code
 COPY init-firewall.sh /usr/local/bin/
 USER root
 RUN chmod +x /usr/local/bin/init-firewall.sh && \
-  echo "node ALL=(root) NOPASSWD: /usr/local/bin/init-firewall.sh" > /etc/sudoers.d/node-firewall && \
+  echo "node ALL=(root) NOPASSWD: /usr/local/bin/init-firewall.sh, /workspace/.devcontainer/init-venv.sh" > /etc/sudoers.d/node-firewall && \
   chmod 0440 /etc/sudoers.d/node-firewall
 USER node
